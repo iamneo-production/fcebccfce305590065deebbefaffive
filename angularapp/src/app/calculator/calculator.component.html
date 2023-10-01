@@ -1,0 +1,34 @@
+<!-- calculator.component.html -->
+<div class="calculator">
+    <div class="heading">Just Calculate...!!</div>
+    <input type="text" [(ngModel)]="displayValue" [disabled]="true" />
+  
+    <div class="buttons">
+      <button (click)="onNumberClick('7')">7</button>
+      <button (click)="onNumberClick('8')">8</button>
+      <button (click)="onNumberClick('9')">9</button>
+      <button (click)="onOperatorClick('+')">+</button>
+      <button (click)="onNumberClick('4')">4</button>
+      <button (click)="onNumberClick('5')">5</button>
+      <button (click)="onNumberClick('6')">6</button>
+      <button (click)="onOperatorClick('-')">-</button>
+      <button (click)="onNumberClick('1')">1</button>
+      <button (click)="onNumberClick('2')">2</button>
+      <button (click)="onNumberClick('3')">3</button>
+      <button (click)="onOperatorClick('*')">*</button>
+      <button (click)="onNumberClick('0')">0</button>
+      <button (click)="onEqualsClick()">=</button>
+      <button (click)="onOperatorClick('/')">/</button>
+      <button (click)="onClearClick()">C</button>
+      <button (click)="onDecimalPointClick()">.</button>
+      <button (click)="onClearEntryClick()">CE</button>
+      <button (click)="onBackspaceClick()">&#9003;</button>
+      <button (click)="onPercentageClick()">%</button>
+      <button (click)="onMemoryStoreClick()">M+</button>
+      <button (click)="onMemoryRecallClick()">MR</button>
+      <button (click)="onSquareRootClick()">√</button>
+      <button (click)="onExponentiationClick()">^</button>
+
+    </div>
+  </div>
+  
